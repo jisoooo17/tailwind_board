@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 일반 CSS - button.jsx */
+.button {
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    font-size: 0.75rem; /* text-xs */
+    @media (min-width: 768px) {
+      font-size: 1rem; /* md:text-base */
+    }
+    border-radius: 0.375rem; /* rounded-md */
+    background-color: #4a5568; /* bg-stone-700 */
+    color: #a0aec0; /* text-stone-400 */
+  }
+  
+  .button:hover {
+    background-color: #718096; /* hover:bg-stone-600 */
+    color: #f7fafc; /* hover:text-stone-100 */
+  }
+  
+/* 일반 CSS - input.jsx */
+.input {
+    width: 100%;
+    padding: 0.25rem;
+    border-bottom: 2px solid #cbd5e0; /* border-b-2 border-stone-300 */
+    border-radius: 0.125rem; /* rounded-sm */
+    background-color: #e2e8f0; /* bg-stone-200 */
+    color: #4a5568; /* text-stone-600 */
+    outline: none;
+    transition: border-color 0.2s ease-in-out; /* focus:border-stone-600 */
+  }
+  
+  .input:focus {
+    border-color: #4a5568; /* focus:border-stone-600 */
+  }
+
+  
+/* 일반 CSS - modal.jsx */
+.modal {
+    background-color: rgba(35, 41, 49, 0.9); /* backdrop:bg-stone-900/90 */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.375rem; /* rounded-md */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* shadow-md */
+  }
+  
+  .modal-form {
+    margin-top: 1rem; /* mt-4 */
+    text-align: right; /* text-right */
+  }
+
+  
+/* 일반 CSS - newproject.jsx */
+.modal-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    color: #4a5568; /* text-stone-700 */
+    margin-top: 1rem; /* my-4 */
+  }
+  
+  .modal-text {
+    color: #4a5568; /* text-stone-600 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .modal-container {
+    width: 35rem; /* w-[35rem] */
+    margin-top: 4rem; /* mt-16 */
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem; /* gap-4 */
+    margin-bottom: 1rem; /* my-4 */
+  }
+  
+  .cancel-button {
+    color: #4a5568; /* text-stone-800 */
+  }
+  
+  .cancel-button:hover {
+    color: #1a202c; /* hover:text-stone-950 */
+  }
+  
+  .save-button {
+    padding: 0.5rem 1rem; /* px-6 py-2 */
+    border-radius: 0.375rem; /* rounded-md */
+    background-color: #4a5568; /* bg-stone-800 */
+    color: #f7fafc; /* text-stone-50 */
+  }
+  
+  .save-button:hover {
+    background-color: #1a202c; /* hover:bg-stone-950 */
+  }
+  
+
+/* 일반 CSS - new task */
+.new-task-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+  }
+  
+  .task-input {
+    width: 10rem; /* w-64 */
+    padding: 0.25rem 0.5rem; /* px-2 py-1 */
+    border-radius: 0.125rem; /* rounded-sm */
+    background-color: #e2e8f0; /* bg-stone-200 */
+  }
+  
+  .add-task-button {
+    color: #4a5568; /* text-stone-700 */
+  }
+  
+  .add-task-button:hover {
+    color: #1a202c; /* hover:text-stone-950 */
+  }
+  
+
+/* 일반 CSS - no project.jsx */
+.no-project-selected-container {
+    margin-top: 6rem; /* mt-24 */
+    text-align: center; /* text-center */
+    width: 66.666%; /* w-2/3 */
+  }
+  
+  .no-project-image {
+    width: 4rem; /* w-16 */
+    height: 4rem; /* h-16 */
+    object-fit: contain; /* object-contain */
+    margin: 0 auto; /* mx-auto */
+  }
+  
+  .no-project-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    color: #4a5568; /* text-stone-500 */
+    margin-top: 1rem; /* my-4 */
+  }
+  
+  .no-project-text {
+    color: #a0aec0; /* text-stone-400 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .no-project-button {
+    margin-top: 2rem; /* mt-8 */
+  }
+  
+
+/* 일반 CSS - project slide bar.jsx */
+.projects-sidebar {
+    width: 33.333%; /* w-1/3 */
+    padding: 2rem 1rem; /* px-8 py-16 */
+    background-color: #4a5568; /* bg-stone-900 */
+    color: #f7fafc; /* text-stone-50 */
+    border-top-right-radius: 2rem; /* rounded-r-xl */
+  }
+  
+  .sidebar-title {
+    margin-bottom: 2rem; /* mb-8 */
+    font-weight: bold; /* font-bold */
+    text-transform: uppercase; /* uppercase */
+    font-size: 1.5rem; /* md:text-xl */
+    color: #a0aec0; /* text-stone-200 */
+  }
+  
+  .sidebar-list {
+    margin-top: 2rem; /* mt-8 */
+    list-style-type: none; /* remove default list style */
+  }
+  
+  .sidebar-item {
+    width: 100%; /* w-full */
+    text-align: left; /* text-left */
+    padding: 0.5rem 1rem; /* px-2 py-1 */
+    border-radius: 0.125rem; /* rounded-sm */
+    margin-bottom: 0.5rem; /* my-1 */
+    color: #a0aec0; /* text-stone-400 */
+  }
+  
+  .sidebar-item:hover {
+    color: #f7fafc; /* hover:text-stone-200 */
+    background-color: #4a5568; /* hover:bg-stone-800 */
+  }
+  
+  .sidebar-item.active {
+    background-color: #4a5568; /* bg-stone-800 */
+    color: #a0aec0; /* text-stone-200 */
+  }
+  
+
+/* 일반 CSS - selectedproject.jsx */
+.selected-project-container {
+    width: 35rem; /* w-[35rem] */
+    margin-top: 4rem; /* mt-16 */
+  }
+  
+  .selected-project-header {
+    padding-bottom: 1rem; /* pb-4 */
+    margin-bottom: 1rem; /* mb-4 */
+    border-bottom: 2px solid #cbd5e0; /* border-b-2 border-stone-300 */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    color: #4a5568; /* text-stone-600 */
+    margin-bottom: 0.5rem; /* mb-2 */
+  }
+  
+  .delete-button {
+    color: #4a5568; /* text-stone-600 */
+  }
+  
+  .delete-button:hover {
+    color: #1a202c; /* hover:text-stone-950 */
+  }
+  
+  .project-date {
+    color: #a0aec0; /* text-stone-400 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .project-description {
+    color: #4a5568; /* text-stone-600 */
+    white-space: pre-wrap; /* whitespace-pre-wrap */
+  }
+  
+
+  /* 일반 CSS - tasks.jsx */
+.tasks-section {
+    margin-top: 1rem; /* mt-8 */
+  }
+  
+  .tasks-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+    color: #4a5568; /* text-stone-700 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .no-tasks-message {
+    color: #4a5568; /* text-stone-800 */
+    margin: 1rem 0; /* my-4 */
+  }
+  
+  .tasks-list {
+    padding: 1rem; /* p-4 */
+    margin-top: 2rem; /* mt-8 */
+    border-radius: 0.375rem; /* rounded-md */
+    background-color: #cbd5e0; /* bg-stone-100 */
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem; /* my-4 */
+  }
+  
+  .delete-task-button {
+    color: #4a5568; /* text-stone-700 */
+  }
+  
+  .delete-task-button:hover {
+    color: #e53e3e; /* hover:text-red-500 */
+  }
+  
